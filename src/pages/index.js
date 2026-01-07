@@ -1,0 +1,9 @@
+export { Home } from './Home/Home';
+export { About } from './About/About';
+export { Cart } from './Cart/Cart';
+export { CheckOut } from './CheckOut/CheckOut';
+export { Contact } from './Contact/Contact';
+export { Favorites } from './Favorites/Favorites';
+export { Gallery } from './Gallery/Gallery';
+export { Product } from './Product/Product';
+export { Search } from './Search/Search';
