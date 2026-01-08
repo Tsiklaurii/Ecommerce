@@ -5,10 +5,6 @@ export const routes = [
         path: "/",
         element: <Home />
     },
-    // {
-    //     path: "/:lang",
-    //     element: <Home />
-    // },
     {
         path: "/:lang/",
         element: <Home />
@@ -16,6 +12,10 @@ export const routes = [
     {
         path: "/:lang/about",
         element: <About />
+    },
+    {
+        path: "/:lang/product/:productId",
+        element: <Product />
     },
     {
         path: "*",

@@ -2,7 +2,7 @@ import { useContext } from "react"
 import { Link } from "react-router-dom"
 import { StaticDataContext } from '../../global/contexts/StaticDataContext';
 
-export const HomeProductCard = ({ product }) => {
+export const SimilarProductCard = ({ product }) => {
     const { lang } = useContext(StaticDataContext);
 
     return (

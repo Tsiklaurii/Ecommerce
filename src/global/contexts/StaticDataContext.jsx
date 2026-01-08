@@ -21,7 +21,9 @@ export const StaticDataProvider = ({ children }) => {
         let newLang = lang === 'en' ? 'ka' : 'en';
         setLang(newLang);
         setData('Lang', newLang);
-        navigate(`/${newLang}`);
+        const currentPath = window.location.pathname;
+        const newPath = currentPath.replace(`/${lang}`, `/${newLang}`);
+        navigate(newPath);
         setLangs(newLang === 'en' ? enLangs : kaLangs);
     }
 
