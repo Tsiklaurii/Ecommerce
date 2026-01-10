@@ -1,7 +1,7 @@
 import { _getRequest } from "./axios"
 
-export const getAllProducts = async () => {
-    return await _getRequest('products');
+export const getAllProducts = async (query) => {
+    return await _getRequest(`products${query ? ` ? ${query}` : ""}`);
 }
 
 export const getProductById = async (id) => {
@@ -10,4 +10,8 @@ export const getProductById = async (id) => {
 
 export const getProductsByCategory = async (categoryName) => {
     return await _getRequest(`products/category/${categoryName}`);
+}
+
+export const getAllCategories = async () => {
+    return await _getRequest("products/categories");
 }

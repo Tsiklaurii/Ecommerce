@@ -3,6 +3,7 @@ import { Header, Footer } from './components';
 import { routes } from './global/routes';
 import { StaticDataProvider } from './global/contexts/StaticDataContext';
 import { languageList } from './global/config';
+import { ProductsDataProvider } from './global/contexts/ProductsDataContext';
 
 const checkLanguage = () => {
   let windowUrl = window.location.href;
@@ -19,14 +20,16 @@ const App = () => {
   return (
     <BrowserRouter>
       <StaticDataProvider>
-        <Header />
-        <Routes>
-          {routes.map((route, index) => (
-            <Route key={index} path={route.path} element={route.element}
-            />
-          ))}
-        </Routes>
-        <Footer />
+        <ProductsDataProvider>
+          <Header />
+          <Routes>
+            {routes.map((route, index) => (
+              <Route key={index} path={route.path} element={route.element}
+              />
+            ))}
+          </Routes>
+          <Footer />
+        </ProductsDataProvider>
       </StaticDataProvider>
     </BrowserRouter >
   )

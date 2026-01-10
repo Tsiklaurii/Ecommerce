@@ -11,12 +11,6 @@ export const StaticDataProvider = ({ children }) => {
     const [lang, setLang] = useState(getData('Lang') || languageList[0]);
     const [langs, setLangs] = useState(lang === 'en' ? enLangs : kaLangs);
 
-    useEffect(() => {
-        if (!getData('Lang')) {
-            setData('Lang', languageList[0]);
-        }
-    }, [])
-
     const changeLanguage = () => {
         let newLang = lang === 'en' ? 'ka' : 'en';
         setLang(newLang);
@@ -26,6 +20,12 @@ export const StaticDataProvider = ({ children }) => {
         navigate(newPath);
         setLangs(newLang === 'en' ? enLangs : kaLangs);
     }
+
+    useEffect(() => {
+        if (!getData('Lang')) {
+            setData('Lang', languageList[0]);
+        }
+    }, [])
 
     return (
         <StaticDataContext.Provider value={{ lang, langs, changeLanguage }}>

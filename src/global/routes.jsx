@@ -18,6 +18,10 @@ export const routes = [
         element: <Product />
     },
     {
+        path: "/:lang/search",
+        element: <Search />
+    },
+    {
         path: "*",
         element: <Home />
     },

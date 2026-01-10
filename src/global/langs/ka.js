@@ -13,5 +13,14 @@ export const kaLangs = {
         rate: 'რეიტინგი',
         description: 'აღწერა',
         similar: 'მსგავსი პროდუქტები'
+    },
+    search: {
+        title: 'ძებნა',
+        filters: 'ფილტრები',
+        price: 'ფასი',
+        rate: 'რეიტინგი',
+        sort: 'დახარისხება',
+        sortByprice: 'ფასით',
+        sortByrating: 'რეიტინგით'
     }
 }

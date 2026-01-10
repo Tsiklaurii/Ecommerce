@@ -17,7 +17,7 @@ export const Header = () => {
                 </Link>
             </div>
             <div className='flex relative'>
-                <input type="text" placeholder='Search...' name='search' className='border border-gray-500 p-[2px_5px] rounded-[5px] focus:outline-none' />
+                <input type="text" placeholder='Search...' name='search' className='border border-gray-500 p-[2px_5px] rounded-[5px] focus:outline-none w-100' />
                 <button className='cursor-pointer absolute right-1.25 bottom-1.75'>
                     <img src={search} alt="search" />
                 </button>
