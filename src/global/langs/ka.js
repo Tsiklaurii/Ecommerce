@@ -20,7 +20,10 @@ export const kaLangs = {
         price: 'ფასი',
         rate: 'რეიტინგი',
         sort: 'დახარისხება',
-        sortByprice: 'ფასით',
-        sortByrating: 'რეიტინგით'
+        sortBy: 'აირჩიეთ',
+        sortBypriceASC: "ფასით ზრდადობით",
+        sortBypriceDESC: "ფასით კლებადობით",
+        sortByRatingRate: "რეიტინგი ზრდადობით",
+        sortByRatingCount: "რეიტინგი რაოდენობით"
     }
 }

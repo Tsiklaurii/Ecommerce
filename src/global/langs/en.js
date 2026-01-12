@@ -20,7 +20,10 @@ export const enLangs = {
         price: 'Price',
         rate: 'Rate',
         sort: 'Sort',
-        sortByprice: 'By price',
-        sortByrating: 'tBy rating'
+        sortBy: 'Select',
+        sortBypriceASC: "By Price ASC",
+        sortBypriceDESC: "By Price DESC",
+        sortByRatingRate: "By Rating Rate",
+        sortByRatingCount: "By Rating Count"
     }
 }

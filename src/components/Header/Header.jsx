@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
 import logo from '../../assets/images/logo.png'
-import search from '../../assets/images/search.png';
 import cart from '../../assets/images/cart.png';
 import favorite from '../../assets/images/favorite.png';
 import { useContext } from 'react';
 import { StaticDataContext } from '../../global/contexts/StaticDataContext';
+import { SearchBar } from './components/SearchBar';
 
 export const Header = () => {
     const { lang, langs, changeLanguage } = useContext(StaticDataContext);
@@ -16,12 +16,9 @@ export const Header = () => {
                     <img src={logo} alt="Logo" className='h-12.5 cursor-pointer' />
                 </Link>
             </div>
-            <div className='flex relative'>
-                <input type="text" placeholder='Search...' name='search' className='border border-gray-500 p-[2px_5px] rounded-[5px] focus:outline-none w-100' />
-                <button className='cursor-pointer absolute right-1.25 bottom-1.75'>
-                    <img src={search} alt="search" />
-                </button>
-            </div>
+
+            <SearchBar />
+
             <div className='flex gap-7.5 w-85 justify-center'>
                 <Link to={`/${lang}/about`}>{langs.menu.about}</Link>
                 <Link to={`/${lang}/gallery`}>{langs.menu.gallery}</Link>

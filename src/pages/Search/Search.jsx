@@ -12,7 +12,7 @@ export const Search = () => {
   return (
     <div className="pt-6 pl-10">
       <h1 className="font-bold text-2xl">{langs.search.title}</h1>
-      <div className="flex gap-10">
+      <div className="flex gap-22">
 
         <Filters />
 
